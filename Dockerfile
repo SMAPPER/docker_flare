@@ -2,7 +2,7 @@ FROM centos:latest
 
 MAINTAINER Justin Henderson justin@hasecuritysolutions.com
 
-RUN yum install -y python python-devel git
+RUN yum install -y python python-devel git gcc
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 RUN python get-pip.py
 RUN cd /opt && git clone https://github.com/austin-taylor/flare.git
