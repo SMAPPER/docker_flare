@@ -2,6 +2,7 @@ FROM centos:latest
 
 MAINTAINER Justin Henderson justin@hasecuritysolutions.com
 
+RUN yum update
 RUN yum install -y python python-devel git gcc
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 RUN python get-pip.py
